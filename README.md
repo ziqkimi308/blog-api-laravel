@@ -1,6 +1,6 @@
 # Laravel Blog API - Many-to-Many Relationships & File Uploads
 
-A RESTful blogging API built with Laravel 11, featuring advanced relationships, file uploads, authentication, and dynamic querying.
+A RESTful blogging API built with Laravel 12, featuring advanced relationships, file uploads, authentication, and dynamic querying.
 
 ## 🚀 Features
 
@@ -19,7 +19,7 @@ A RESTful blogging API built with Laravel 11, featuring advanced relationships, 
 - PHP 8.1+
 - Composer
 - PostgreSQL
-- Laravel 11 (the project is built on it)
+- Laravel 12 (the project is built on it)
 
 ## 📌 API Endpoints
 
