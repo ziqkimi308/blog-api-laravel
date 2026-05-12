@@ -8,18 +8,18 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
+    // use WithoutModelEvents; # DO NOT USE THIS!!! This means Disable all model events globally until seeding is finished
 
-    /**
-     * Seed the application's database.
-     */
+	/**
+	 * Seed the application's database.
+	 */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+		// The order is important!
+        $this->call([
+			CategorySeeder::class,
+			TagSeeder::class,
+			PostSeeder::class
+		]);
     }
 }

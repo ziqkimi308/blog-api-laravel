@@ -28,7 +28,7 @@ class Category extends Model
 	protected static function booted()
 	{
 		// The slug is never intended to be custom
-		
+
 		// Laravel automatically passes the model instance being created into that callback
 		static::creating(function ($category) {
 			if (empty($category->slug)) {

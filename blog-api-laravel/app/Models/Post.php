@@ -84,6 +84,7 @@ class Post extends Model
 	{
 		static::creating(function ($post) {
 			// Assign slug if not provided
+			// empty() also cover for NULL
 			if (empty($post->slug)) {
 				$slug = Str::slug($post->title);
 				$count = 1;

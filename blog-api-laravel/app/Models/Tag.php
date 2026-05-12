@@ -17,7 +17,7 @@ class Tag extends Model
 	// relationship
 	public function posts()
 	{
-		return $this->belongsTo(Post::class);
+		return $this->belongsToMany(Post::class);
 	}
 
 	// Lifecycle / Event
